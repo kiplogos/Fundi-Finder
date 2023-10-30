@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👷🏿‍♀️Fundi Finder</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Jquery  -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+        
+        <!-- Javascript -->
+            <script  src="index.js"></script>
+            <!-- <script src="server.js"></script> -->
+            
+
+ 
+
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="header">
+        <h1>👷🏿‍♀️FindAFundi.net</h1>
+        <ul>
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="about.asp">About</a></li>
+            <li><a href="contact.asp">Contact Us</a></li> 
+            <li><a href="news.asp">Login</a></li>
+            <li> <input class="" type="text" placeholder="Search.."></li>        
+        </ul>
+        <!-- <hr> -->
+    </div>
+    <div class="col-12  missionStatement">
+      <h1 class="bigHeading" >Connecting Approved Kenyan Artisans to Prospective Clients</h1>
+      <hr>
+    </div>
+   
+
+    
+    <div class="row">
+        <div class="col-3 sidePanel">
+            <ul>
+                <h2>Top Ranked</h2>
+                <li>Electricians</li>
+                <li>Plumbers</a></li>
+                <li>Carpenters</a></li>
+                <li>Roofers</a></li>
+                <li>Masons</a></li>
+                <li>Tailors</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 middleBit">
+            <h2>Looking For a Handyman?</h2>
+            <form  action="/submit" method="post">
+                <label for="trades">Pick A Trade:</label>
+                <div class="break"></div>
+                <select name="trades" id="trades">
+                  <option value="Electrician">Electrician</option>
+                  <option value="Plumber">Plumber</option>
+                  <option value="Mason">Mason</option>
+                  <option value="Welder">Welder/Fabricator</option>
+                  <option value="Welder">Tailor</option>
+                </select>
+                <div class="break"></div>
+                <input class="mainButton" id="mainButtonID" type="submit" value="Find A Fundi">
+                <p>Are you a Fundi? Sign up here: </p>
+                <input type="button" class="signUpButton" value="Sign Up">
+                <div class="formContainer">
+
+                </div>
+                
+              </form>
+            <div class="locationPrompt">
+    
+            </div>
+            <!-- <div id="suggestionsDropdown">
+    
+            </div> -->
+            <hr>
+            <div class="secondSection">
+                <h2>How it works</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet</p>
+                
+                <p>Augue mauris augue neque gravida. Nibh ipsum consequat nisl vel pretium lectus quam. Lorem mollis aliquam ut porttitor leo. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Sed cras ornare arcu dui vivamus arcu. </p>
+                
+              </div>
+              <hr>
+
+            <div class="fundiSection">
+                <h2>Our Fundis</h2>
+                <h4>Pick from our selection of approved artisans</h4>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/IMG_20230305_145713.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Rating: ⭐⭐⭐⭐⭐</p>
+                            <h5>Nixon Kipkorir Logos</h5>
+                            <p>Mason</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img  src="images/IMG_20230305_145713.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Rating: ⭐</p>
+                            <h5>Billie Jean</h5>
+                            <p>Plumber</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img  src="images/IMG_20230305_145713.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Rating: ⭐⭐⭐</p>
+                            <h5>Oumar Abubakar</h5>
+                            <p>Electrician</p>
+                          </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                  
+            </div>
+
+        </div>
+
+        <div class="col-3 rightSide"> 
+            <h1>Site Stats</h1>
+            <p>Registered Fundis: <p class=".registeredFundis"></p></p>
+            <p>Registered Clients: 001</p>
+            <input type="button" value="Request A Fundi"><br><br>
+            <a class="blogLink" href="https://kiplogos.github.io/Blog/">The Builder's Perspective </a>
+        </div>
+
+
+
+        <div>
+            <!-- <div class="col-3 sidePanel">
+                <ul>
+                    <h2>Top Ranked</h2>
+                    <li>Electricians</li>
+                    <li>Plumbers</a></li>
+                    <li>Carpenters</a></li>
+                    <li>Roofers</a></li>
+                    <li>Masons</a></li>
+                    <li>Tailors</a></li>
+                </ul>
+            </div> -->
+        </div>
+
+        
+    </div>
+    <div class="col-12 footer">
+        <footer>
+            <ul>
+                <li><a href="default.asp">Home</a></li>
+                <li><a href="news.asp">News</a></li>
+                <li><a href="about.asp">About</a></li>
+                <li><a href="contact.asp">Contact Us</a></li>            
+            </ul>
+            <h2><a class="footerLink" href="">👷🏿‍♀️FindAFundi.net</a></h2>
+          </footer>
+    </div>
+    
+
+
+</body>
+</html>
